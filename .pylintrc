@@ -7,3 +7,5 @@ disable = missing-function-docstring,
         line-too-long,
         invalid-str-returned,
         no-member
+
+disable=W0613,C0103
