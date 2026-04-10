@@ -1,0 +1,3 @@
+https://site.com/about - 404
+https://site.com/services - 500
+https://site.com/blog - 404
