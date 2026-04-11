@@ -1,5 +1,0 @@
-https://site.com/main - 200
-https://site.com/about - 404
-https://site.com/contacts - 200
-https://site.com/services - 500
-https://site.com/blog - 404

@@ -12,7 +12,6 @@
 #     file_path = os.path.join(i, 'report.txt')
 #     with open(file_path, 'w', encoding='utf-8') as file:
 #         file.write('Test123')
-
 # Задание №2: "Ревизор файлов"
 # Давай попробуем заглянуть в то, что мы только что насоздавали. Это поможет тебе научиться "сканировать" папки сайтов для анализа.
 # Твоё задание:
@@ -22,7 +21,30 @@
 #     Выведи результат в формате:
 #         google.com — это папка
 #         script.py — это файл
+# import os
+# user_listdir = os.listdir()
+# result = []
+# for i in user_listdir:
+#     if os.path.isdir(i):
+#         print(i, '- это папка')
+#     elif os.path.isfile(i):
+#         print(i, '- это файл')
+
+# Задание №3: «Чистильщик» (Удаление)
+# Давай научимся удалять то, что создали. Это нужно делать осторожно, поэтому добавим проверку.
+# Твоё задание:
+#     Напиши скрипт, который ищет в текущей папке файл old_name.txt.
+#     Если файл существует:
+#         Переименуй его в trash.txt.
+#         А затем сразу удали его с помощью os.remove().
+#     Если файла нет:
+#         Выведи сообщение: «Файл для удаления не найден».
 
 import os
 
-print(os.listdir())
+with open('old_name.txt', 'w', encoding='utf-8') as file:
+    file.write('')
+
+if os.path.exists('old_name.txt'):
+    os.rename('old_name.txt', 'trash.txt')
+    os.remove('trash.txt')
