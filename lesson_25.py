@@ -19,7 +19,14 @@
 import os
 import datetime
 
-today_date = datetime.date.today()
-time_now = datetime.time()
+now = datetime.datetime.now()
+formated_date = now.strftime('%d_%m_%Y')
+formated_time = now.strftime('%H:%M:%S')
 
-print(time_now)
+if not os.path.exists(formated_date):
+    os.makedirs(formated_date)
+
+file_path = os.path.join(formated_date, 'run_log.txt')
+
+with open(file_path, 'a', encoding='utf-8') as file:
+    file.write(f'[{formated_time}] Сессия запущена\n')

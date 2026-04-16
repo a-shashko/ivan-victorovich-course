@@ -1,7 +1,6 @@
 {
     "git.autoRepositoryDetection": "subFolders",
     "breadcrumbs.enabled": true,
-
     "python.languageServer": "Pylance",
     "python.analysis.typeCheckingMode": "off",
     "python.analysis.diagnosticMode": "openFilesOnly",
@@ -20,7 +19,6 @@
             "includeAllSymbols": true
         }
     ],
-      
     "[python]": {
         "editor.defaultFormatter": "ms-python.black-formatter"
     },
@@ -37,5 +35,6 @@
     "django.snippets.exclude": [
         "cms",
         "wagtail"
-    ]
+    ],
+    "editor.inlineSuggest.enabled": false
 }
